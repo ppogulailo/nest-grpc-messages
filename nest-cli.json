@@ -6,18 +6,18 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+    "tsConfigPath": "apps/apigateway/tsconfig.app.json"
   },
   "monorepo": true,
-  "root": "apps/api-gateway",
+  "root": "apps/apigateway",
   "projects": {
-    "api-gateway": {
+    "apigateway": {
       "type": "application",
-      "root": "apps/api-gateway",
+      "root": "apps/apigateway",
       "entryFile": "src/main",
       "sourceRoot": "./",
       "compilerOptions": {
-        "tsConfigPath": "apps/api-gateway/tsconfig.app.json",
+        "tsConfigPath": "apps/apigateway/tsconfig.app.json",
         "assets": ["proto/*.proto"],
         "watchAssets": true
       }
